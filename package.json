@@ -1,0 +1,32 @@
+{
+  "name": "keydown",
+  "productName": "KeyDown",
+  "version": "1.0.0",
+  "license": "MIT",
+  "main": "src/index.js",
+  "scripts": {
+    "postinstall": "electron-rebuild",
+    "start": "electron ."
+  },
+  "dependencies": {
+    "electron": "6.1.4",
+    "electron-rebuild": "1.8.6",
+    "iohook": "0.6.1",
+    "keycode": "2.2.0",
+    "rxjs": "6.5.3"
+  },
+  "iohook": {
+    "targets": [
+      "node-67",
+      "electron-73"
+    ],
+    "platforms": [
+      "darwin",
+      "linux"
+    ],
+    "arches": [
+      "x64",
+      "ia32"
+    ]
+  }
+}
